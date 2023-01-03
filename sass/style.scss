@@ -37,3 +37,26 @@ body {
         }
     }
 }
+button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+        cursor: pointer;
+        color: $blue;
+        &::after {
+            cursor: pointer;
+            color: $blue;
+            border: 1px solid $blue;
+        }
+    }
+    
+}
